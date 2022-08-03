@@ -57,3 +57,9 @@ function manageImgs() {
 window.scroll({
   behavior: "smooth",
 });
+
+let scrollToTop = document.getElementById("scroll-to-top");
+
+scrollToTop.addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
+});
